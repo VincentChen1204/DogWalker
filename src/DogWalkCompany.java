@@ -5,6 +5,9 @@ public class DogWalkCompany {
     public DogWalkCompany() {
         schedule = new int[24];
     }
+    public DogWalkCompany(int[] schedule) {
+        this.schedule = schedule;
+    }
 
 
 
