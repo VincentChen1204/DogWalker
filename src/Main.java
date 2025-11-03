@@ -32,13 +32,4 @@ public class Main {
         }
         return money;
     }
-    public static class DogWalkCompany {
-        private int[] schedule;
-        public DogWalkCompany() {
-            schedule = new int[24];
-        }
-        public DogWalkCompany(int[] schedule) {
-            this.schedule = schedule;
-        }
-    }
 }
