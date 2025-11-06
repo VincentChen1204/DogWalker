@@ -17,15 +17,19 @@ public class Main {
                 dogs[i] = s.nextInt();
             }
             companies[index] = new DogWalkCompany(dogs);
+            index++;
         }
-        index++;
         DogWalker[] walkers = new DogWalker[(int)Math.pow(10,4)];
         f = new File("Walkers.txt");
         s = new Scanner(f);
         index = 0;
         while (s.hasNextLine()) {
             int dogs = s.nextInt();
-            DogWalkCompany company = companies[s.nextInt()];
+            int i = s.nextInt();
+            System.out.println(i);
+            System.out.println(companies[940]);
+            DogWalkCompany company = companies[i];
+            System.out.println(company);
             walkers[index] = new DogWalker(dogs, company);
             money += walkers[index].dogWalkShift(s.nextInt(), s.nextInt());
             index++;

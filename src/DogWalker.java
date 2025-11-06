@@ -7,6 +7,10 @@ public class DogWalker {
         company = comp;
     }
 
+    public DogWalkCompany getDogWalkCompany() {
+        return company;
+    }
+
     public int walkDogs(int hour) {
         int dogs = company.numAvailableDogs(hour);
         if (dogs < maxDogs)
@@ -30,7 +34,7 @@ public class DogWalker {
             startHour++;
             if (dogs == maxDogs || startHour >= 9 && startHour <= 17)
                 pay += 3;
-            pay = pay;
+            //pay = pay;
         }
         return pay;
     }
